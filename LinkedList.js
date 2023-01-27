@@ -31,6 +31,15 @@ class LinkedList{
         }
     }
 
+    size(){
+        let counter = 0;
+        let pointer = this.head;
+        while(pointer.nextNode != null){
+            counter++;
+            pointer = pointer.nextNode;
+        }
+        return counter;
+    }
 }
 
 export default LinkedList;
