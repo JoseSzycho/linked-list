@@ -10,4 +10,4 @@ list.append(2)
 list.append(3)
 list.append(1)
 
-console.log(list.show());
+list.show();
