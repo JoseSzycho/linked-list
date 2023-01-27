@@ -40,6 +40,28 @@ class LinkedList{
         }
         return counter;
     }
+
+    headd(){
+        console.log(this.head);
+    }
+
+    tail(){
+        let pointer = this.head;
+        while(pointer.nextNode.nextNode != null){
+            pointer = pointer.nextNode;
+        }
+        console.log(pointer);
+    }
+
+    toString(){
+        let pointer = this.head;
+        let text = ``;
+        while(pointer.nextNode != null){
+            text+= `(${pointer.value}) -> `
+            pointer = pointer.nextNode;
+        }
+        console.log(text + "(null)")
+    }
 }
 
 export default LinkedList;
