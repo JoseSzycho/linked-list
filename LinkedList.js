@@ -16,6 +16,13 @@ class LinkedList{
         pointer.nextNode = new Node();
     }
 
+    prepend(value){
+        let node = new Node();
+        node.value = value;
+        node.nextNode = this.head;
+        this.head = node;
+    }
+
     show(){
         let pointer = this.head;
         while(pointer.nextNode != null){
